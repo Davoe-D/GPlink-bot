@@ -7,7 +7,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = 'afe5639a4c191dda12359ed9ebf8b87929a5f428'
+API_KEY = 'e1e2d502c8de431782eab63876c26953dceb8198'
 
 bot = Client('gplink bot',
              api_id=API_ID,
@@ -41,8 +41,8 @@ async def repo(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('GitHub Repo', url='https://gplinks.co/85DLyrP'),
-                    InlineKeyboardButton('Get API', url='https://gplinks.in/ref/AbirHasan2005')
+                    InlineKeyboardButton('GitHub Repo', url='https://gplinks.co/xb9vD3'),
+                    InlineKeyboardButton('Get API', url='https://gplinks.in/ref/davoed')
                 ],
                 [
                     InlineKeyboardButton('Support Group', url='https://t.me/naija_bestz')
