@@ -20,14 +20,14 @@ bot = Client('gplink bot',
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hi {message.chat.first_name}!** \n\nThis is **GPLinks URL Shorter Bot**. Just send me any big link and get short link.",
+        f"**Hi {message.chat.first_name}!** \n\nThis is **Bestz Links URL Shorter Bot**. Just send me any big link and get short link.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Bots Updates Channel', url='https://t.me/Discovery_Updates')
+                    InlineKeyboardButton('Bots Updates Channel', url='https://t.me/naijabestz')
                 ],
                 [
-                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
+                    InlineKeyboardButton('Support Group', url='https://t.me/naija_bestz')
                 ]
             ]
         )
@@ -45,7 +45,7 @@ async def repo(bot, message):
                     InlineKeyboardButton('Get API', url='https://gplinks.in/ref/AbirHasan2005')
                 ],
                 [
-                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
+                    InlineKeyboardButton('Support Group', url='https://t.me/naija_bestz')
                 ]
             ]
         )
@@ -72,7 +72,7 @@ async def link_handler(bot, message):
         now = datetime.datetime.now()
         chat_id = environ.get('LOG_CHANNEL', -1001283278354)
         uname = f"[{message.from_user.first_name}](tg://openmessage?user_id={message.from_user.id})"
-        await bot.send_message(chat_id, f"**#SHORTEN: \n\n@GPLinkz_Bot Shortened** {link} **to** {short_link} **for** {uname} **at** `{now}`", parse_mode="markdown", disable_web_page_preview=True)
+        await bot.send_message(chat_id, f"**#SHORTEN: \n\n@naijabestz** {link} **to** {short_link} **for** {uname} **at** `{now}`", parse_mode="markdown", disable_web_page_preview=True)
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
